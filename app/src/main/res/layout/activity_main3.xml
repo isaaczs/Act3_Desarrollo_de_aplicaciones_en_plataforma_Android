@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logoEscuela"
+        android:layout_width="299dp"
+        android:layout_height="51dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/logo_tecmi"
+        android:src="@drawable/tecmilenio_logo2" />
+
+    <ImageView
+        android:id="@+id/logoAndroid"
+        android:layout_width="147dp"
+        android:layout_height="153dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/logo_android"
+        android:src="@drawable/android_logo" />
+
+    <!--<Button
+        android:id="@+id/bObjeto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/logoAndroid"
+        android:layout_centerHorizontal="true"
+        android:onClick="infoUsuario"
+        android:text="@string/boton_objeto"
+        android:textAllCaps="false"
+        android:textSize="24sp" />  -->
+
+    <TextView
+        android:id="@+id/Nombre"
+        android:layout_width="72dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="104dp"
+        android:text="@string/nombre"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/PrimerApellido"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="166dp"
+        android:text="@string/pApellido"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/SegundoApellido"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="225dp"
+        android:text="@string/sApellido"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Edad"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+
+        android:layout_marginBottom="203dp"
+        android:text="@string/edad"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/texto_indicaciones"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="67dp"
+        android:text="@string/indicaciones"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/outputNombre"
+        android:layout_width="200dp"
+        android:layout_height="33dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/Nombre"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/outputPrimerApellido"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/PrimerApellido"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/outputSegundoApellido"
+        android:layout_width="200dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/SegundoApellido"
+        android:textSize="15sp"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/outputEdad"
+        android:layout_width="200dp"
+        android:layout_height="34dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/Edad"
+        android:textSize="15sp" />
+</RelativeLayout>

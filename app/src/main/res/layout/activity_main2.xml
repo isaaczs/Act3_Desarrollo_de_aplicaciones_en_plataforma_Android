@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logoEscuela"
+        android:layout_width="299dp"
+        android:layout_height="51dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/logo_tecmi"
+        android:src="@drawable/tecmilenio_logo2" />
+
+    <ImageView
+        android:id="@+id/logoAndroid"
+        android:layout_width="147dp"
+        android:layout_height="153dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/logo_android"
+        android:src="@drawable/android_logo" />
+
+    <Button
+        android:id="@+id/bObjeto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/logoAndroid"
+        android:layout_centerHorizontal="true"
+        android:onClick="infoUsuario"
+        android:text="@string/boton_objeto"
+        android:textAllCaps="false"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/Nombre"
+        android:layout_width="72dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="104dp"
+        android:text="@string/nombre"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/PrimerApellido"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/inputPrimerApellido"
+        android:text="@string/pApellido"
+        android:textSize="18sp"
+        android:layout_toStartOf="@id/inputPrimerApellido"
+        android:layout_toLeftOf="@id/inputPrimerApellido"/>
+
+    <TextView
+        android:id="@+id/SegundoApellido"
+        android:layout_width="146dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/inputSegundoApellido"
+        android:layout_marginEnd="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_toLeftOf="@id/inputSegundoApellido"
+        android:layout_toStartOf="@id/inputSegundoApellido"
+        android:text="@string/sApellido"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Edad"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_above="@+id/bObjeto"
+        android:layout_alignParentStart="true"
+        android:text="@string/edad"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/texto_indicaciones"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        android:text="@string/indicaciones"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/inputNombre"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/Nombre"
+        android:inputType="text"
+        android:textSize="15sp"
+        android:hint="@string/nombre"/>
+
+    <EditText
+        android:id="@+id/inputPrimerApellido"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="163dp"
+        android:hint="@string/pApellido"
+        android:inputType="text"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/inputSegundoApellido"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="213dp"
+        android:hint="@string/sApellido"
+        android:inputType="text"
+        android:textSize="15sp"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/inputEdad"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bObjeto"
+        android:layout_alignParentEnd="true"
+        android:hint="@string/edad"
+        android:inputType="number"
+        android:textSize="15sp" />
+</RelativeLayout>

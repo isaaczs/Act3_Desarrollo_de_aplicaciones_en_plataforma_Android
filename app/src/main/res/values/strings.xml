@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Acttividad 3</string>
+    <string name="bienvenida">Bienvenido</string>
+    <string name="nombre">Nombre:</string>
+    <string name="pApellido">Primer apellido:</string>
+    <string name="sApellido">Segundo apellido:</string>
+    <string name="logo_tecmi">Logo de la escuela</string>
+    <string name="logo_android">Logo de la Android</string>
+    <string name="boton_objeto">Continuar</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="indicaciones">Introduce los siguientes datos</string>
+    <string name="edad">Edad:</string>
+    <string name="boton_acceder">Acceder</string>
+
+</resources>
