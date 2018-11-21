@@ -78,7 +78,8 @@
         android:layout_above="@+id/bObjeto"
         android:layout_alignParentStart="true"
         android:text="@string/edad"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:layout_alignParentLeft="true" />
 
     <TextView
         android:id="@+id/texto_indicaciones"
@@ -110,7 +111,8 @@
         android:layout_marginTop="163dp"
         android:hint="@string/pApellido"
         android:inputType="text"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        android:layout_alignParentRight="true" />
 
     <EditText
         android:id="@+id/inputSegundoApellido"
@@ -122,7 +124,8 @@
         android:hint="@string/sApellido"
         android:inputType="text"
         android:textSize="15sp"
-        tools:ignore="LabelFor" />
+        tools:ignore="LabelFor"
+        android:layout_alignParentRight="true" />
 
     <EditText
         android:id="@+id/inputEdad"
@@ -132,5 +135,6 @@
         android:layout_alignParentEnd="true"
         android:hint="@string/edad"
         android:inputType="number"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        android:layout_alignParentRight="true" />
 </RelativeLayout>
